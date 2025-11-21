@@ -12,7 +12,15 @@ public class Main {
             System.out.println("i = " + i);
         }
         int clientOS = 0;
+        int iOS = 0;
+        int android = 1;
         int clientDeviceYear = 2015;
+        if (iOS == 0) {
+            System.out.println("Операционная система iOS ");
+        }
+        if (android == 1) {
+            System.out.println("Операционная система Android");
+        }
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
@@ -27,7 +35,7 @@ public class Main {
         } else if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        int year = 2020;
+        int year = 2021;
         if (year < 1584) {
             System.out.println(year + " год не является високосным");
         } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
